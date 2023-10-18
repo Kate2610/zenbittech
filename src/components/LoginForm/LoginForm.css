@@ -1,0 +1,128 @@
+.LoginFormContainer{
+  background-color: rgba(242, 242, 242, 1);
+}
+.FormContainer {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  height: 354px;
+  width: 350px;
+  position: absolute;
+  top: 335px;
+  left: 990px;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.LoginText {
+  width: 82px;
+  height: 34px;
+  top: 335px;
+  left: 990px;
+  font-family: Merriweather;
+ 
+  font-weight: 700;
+
+}
+
+.ImageContainer {
+  background-image: url('../../assets/Rectangle\ 291.png');
+  background-size: cover;
+  width: 890px; 
+  height: 943px;
+}
+
+.ContentContainer {
+
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  
+  margin-bottom: 16px;
+}
+
+
+.ContentContainer h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.ContentContainer form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+.ContentContainer button {
+
+height: 44px;
+background-color: rgba(178, 159, 126, 1);
+color: rgba(224, 224, 224, 1);
+
+border: 1px solid #ccc;
+border-radius: 5px;
+ 
+    font-family: Merriweather;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+  
+ 
+  
+}
+
+input[type="email"],
+input[type="password"] {
+
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 5px;
+  padding-left: 15px;
+  margin-bottom: 16px;
+  font-family: Lato;
+  font-size: 14px;
+  color:  gray;
+  background: rgba(224, 224, 224, 1);
+
+
+  box-sizing: border-box;
+
+}
+
+
+
+
+.SignUpText {
+
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+ 
+  text-decoration: none;
+  
+}
+
+.ForgotPasswordLink {
+
+    color: rgba(178, 159, 126, 1);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    margin-left: 240px;  
+    text-decoration: none;
+}
+
+.SignUpLink {
+  color: rgba(178, 159, 126, 1);
+  text-decoration: none;
+}
