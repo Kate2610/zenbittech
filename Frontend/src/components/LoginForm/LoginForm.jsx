@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { login } from '../../redux/authAction'; // Импортируйте экшен login из ваших действий
 import './LoginForm.css';
 
-function LogInForm() {
+function LogInForm({ login }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -17,6 +19,7 @@ function LogInForm() {
 
   const handleLogin = () => {
   
+    login(email, password);
     navigate('/');
   };
 
@@ -67,4 +70,8 @@ function LogInForm() {
   );
 }
 
-export default LogInForm;
+const mapDispatchToProps = {
+  login,
+};
+
+export default connect(null, mapDispatchToProps)(LogInForm);
